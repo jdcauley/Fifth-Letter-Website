@@ -8,8 +8,17 @@ html(lang="en")
     link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="/rss.xml")
   body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
     .container
+      .row
+        .col-sm-4
+          h1 Fifth Letter
+        .col-sm-8
+          ul.nav.nav-pills.pull-right
+            li
+              a(href="#{ site_url }/") Home
+            li
+              a(href="#{ site_url }/portfolio") Portfolio
 
-      != yield
+    != yield
 
     footer
       .container

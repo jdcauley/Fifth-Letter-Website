@@ -1,18 +1,52 @@
 @import '_bootstrap';
 
 
-/* Custom Variables */
+/* ========================================
+    Variables
+   ======================================== */
+@featuregray: #6f6f6f;
 @red: #b44647;
 @orange: #e18728;
 @purple: #9351a6;
+@blue: #4472b9;
 
-/* Custom Mixins */
+/* ========================================
+    Mixins
+   ======================================== */
 
-/* Header */
+/* ========================================
+    Header
+   ======================================== */
 
-/* Navigation */
+/* ========================================
+    Navigation
+   ======================================== */
 
-/* Home Page */
+/* ========================================
+    Home Page
+   ======================================== */
+
+/* Main Call to Action */
+.feature-wrap{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  height: auto;
+  width: 1030px;
+}
+.feature{
+  display: block;
+  height: 400px;
+  width: 100%;
+  background: fade(@featuregray, 50%);
+  h1{
+    line-height: 370px;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+/* Boxes */
 .post-box-wrap{
   display: block;
   margin-left: auto;
@@ -33,7 +67,7 @@
   }
   h2{
     line-height: 225px;
-    vertical-align: center;
+    vertical-align: middle;
     text-align: center;
   }
   &:nth-child(2){
@@ -61,4 +95,127 @@
     }
   }
 
+}
+
+@media (max-width: 1050px){
+  .feature-wrap{
+    width: 780px;
+  }
+  .post-box-wrap{
+    width: 780px;
+  }
+  .post-box{
+    &:nth-child(4){
+      height: 250px;
+      width: 250px;
+      background: fade(@red, 50%);
+      &:hover{
+        background: darken(@red, 30%)
+      }
+    }
+    &:nth-child(3){
+      height: 510px;
+      width: 250px;
+      background: fade(@purple, 50%);
+      &:hover{
+        background: darken(@purple, 30%)
+      }
+    }
+  }
+}
+
+@media (max-width: 790px){
+  .feature-wrap{
+    width: 100%;
+  }
+  .post-box-wrap{
+    width: 100%;
+  }
+  .post-box{
+    height: 250px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    &:nth-child(2){
+      height: 250px;
+      width: 100%;
+      background: fade(@orange, 50%);
+      &:hover{
+        background: darken(@orange, 30%)
+      }
+    }
+    &:nth-child(4){
+      height: 250px;
+      width: 100%;
+      background: fade(@red, 50%);
+      &:hover{
+        background: darken(@red, 30%)
+      }
+    }
+    &:nth-child(3){
+      height: 250px;
+      width: 100%;
+      background: fade(@purple, 50%);
+      &:hover{
+        background: darken(@purple, 30%)
+      }
+    }
+    &:nth-child(6){
+      height: 250px;
+      width: 100%;
+      background: fade(@orange, 50%);
+      &:hover{
+        background: darken(@orange, 30%)
+      }
+    }
+  }
+  .two-up{
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+/* ========================================
+    Portfolio
+   ======================================== */
+
+.porfolio-img{
+  display: block;
+  height: 400px;
+  width: 100%;
+  background: @blue;
+}
+.porfolio-body{
+  margin-top: 30px;
+}
+.two-up{
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap : 20px;
+  column-count: 2;
+  column-gap: 20px;
+}
+
+.thumb{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 100%;
+  background: @red;
+}
+
+.more-like{
+  margin-top: 40px;
+}
+
+@media (max-width: 790px){
+  .two-up{
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
 }
