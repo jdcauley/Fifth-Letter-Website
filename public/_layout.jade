@@ -4,7 +4,7 @@ html(lang="en")
     meta(charset='utf-8')
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title #{ iste_title }
-    link(rel="stylesheet", href="/assets/css/app.css")
+    link(rel="stylesheet", href="#{ site_url }/assets/css/app.css")
     link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="/rss.xml")
   body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
     .container
@@ -20,5 +20,5 @@ html(lang="en")
             p.pull-right
               small: a(href="/rss.xml", title="#{ site_title } RSS feed") RSS feed
 
-    script(src="/assets/js/bootstrap.min.js")
-    script(src="/assets/js/app.js")
+    script(src="#{ site_url }/assets/js/bootstrap.min.js")
+    script(src="#{ site_url }/assets/js/app.js")
