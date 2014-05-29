@@ -1,24 +1,40 @@
 !!!
-html(lang="en")
+html
   head
-    meta(charset='utf-8')
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title #{ iste_title }
-    link(rel="stylesheet", href="/assets/css/app.css")
-    link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="/rss.xml")
-  body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
+    title= site_title
+    //- META
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content='description of your site')
+    meta(name='author', content= 'author of the site')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    //- CSS
+    link(rel='stylesheet', href='assets/css/app.css')
+    //- TYPEKIT
+    script(src='//use.typekit.net/irc8jtw.js')
+    script.
+      try{Typekit.load();}catch(e){}
+
+  body(class="page-#{ current.path[0] }")
+
+    |<!--[if lt IE 7]>
+    p.chromeframe
+      | You are using an
+      strong outdated
+      | browser. Please
+      a(href='http://browsehappy.com/') upgrade your browser
+      | or
+      a(href='http://www.google.com/chromeframe/?redirect=true') activate Google Chrome Frame
+      | to improve your experience.
+    <![endif]-->
+
     .container
 
       != yield
 
     footer
-      .container
-        .row
-          .col-sm-6
-            p: small &copy; 2013 #{ site_title }
-          .col-sm-6
-            p.pull-right
-              small: a(href="/rss.xml", title="#{ site_title } RSS feed") RSS feed
 
-    script(src="/assets/js/bootstrap.min.js")
-    script(src="/assets/js/app.js")
+    //- JS
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js').
+    script(src="/assets/js/bootstrap.min.js").
+    script(src="/assets/js/app.js").
