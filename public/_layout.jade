@@ -41,7 +41,7 @@ html
                   a(href="#") Follow
                 li
                   a(href="#") Subscribe
-                li.search
+                li.search.pull-right
                   form(class="site-search", method="POST", action="/")
                     input(type="text", placeholder="Search")
             nav.nav-primary
@@ -91,9 +91,7 @@ html
                       li(role='presentation')
                         a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Something else here
 
-    .container
-
-      != yield
+    != yield
 
     footer
 

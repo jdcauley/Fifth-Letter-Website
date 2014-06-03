@@ -1,24 +1,25 @@
 .container
   .row
-    #hero.carousel.slide(data-ride='carousel')
-      ol.carousel-indicators
-        li(data-target='#hero', data-slide-to='0')
-        li.active(data-target='#hero', data-slide-to='1')
-        li(data-target='#hero', data-slide-to='2')
-      .carousel-inner
-        .item
-          img(src='http://lorempixel.com/g/1170/500/city/1')
-          .carousel-caption
-            a(href="#") Learn More
-        .item.active
-          img(src='http://lorempixel.com/c/1170/500/city/2')
-          .carousel-caption
-            a(href="#") Learn More
-        .item
-          img(src='http://lorempixel.com/g/1170/500/city/3')
-          .carousel-caption
-            a(href="#") Learn More
-      a.left.carousel-control(href='#hero', data-slide='prev')
-        span.glyphicon.glyphicon-chevron-left
-      a.right.carousel-control(href='#hero', data-slide='next')
-        span.glyphicon.glyphicon-chevron-right
+    .col-md-12
+      #hero.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li(data-target='#hero', data-slide-to='0')
+          li.active(data-target='#hero', data-slide-to='1')
+          li(data-target='#hero', data-slide-to='2')
+        .carousel-inner
+          .item
+            img(src='http://lorempixel.com/g/1140/500/city/1')
+            .carousel-caption
+              a(href="#") Learn More
+          .item.active
+            img(src='http://lorempixel.com/c/1140/500/city/2')
+            .carousel-caption
+              a(href="#") Learn More
+          .item
+            img(src='http://lorempixel.com/g/1140/500/city/3')
+            .carousel-caption
+              a(href="#") Learn More
+        a.left.carousel-control(href='#hero', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left
+        a.right.carousel-control(href='#hero', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right
