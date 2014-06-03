@@ -29,65 +29,67 @@ html
     .mast-wrapper
       .container
         .mast.row
-          a.brand(href="/")
-            img.img-responsive(src="/assets/img/brand.png", alt="Fifth Letter Brand")
-          nav.nav-secondary
-            ul.nav.navbar-nav
-              li
-                a(href="#") Contact
-              li
-                a(href="#") Follow
-              li
-                a(href="#") Subscribe
-              li.search
-                form(class="site-search", method="POST", action="/")
-                  input(type="text", placeholder="Search")
-          nav.nav-primary
-            ul.nav.navbar-nav
-              li.dropdown
-                a(href="#", role="button", class="dropdown-toggle", data-toggle="dropdown")
-                  | You Are
-                  b.caret
-                  ul.dropdown-menu(role='menu', aria-labelledby='drop1')
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Action
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Another action
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Something else here
-              li.dropdown
-                a(href="#", role="button", class="dropdown-toggle", data-toggle="dropdown")
-                  | You Need
-                  b.caret
-                  ul.dropdown-menu(role='menu', aria-labelledby='drop1')
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Action
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Another action
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Something else here
-              li.dropdown
-                a(href="#", role="button", class="dropdown-toggle", data-toggle="dropdown")
-                  | We Are
-                  b.caret
-                  ul.dropdown-menu(role='menu', aria-labelledby='drop1')
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Action
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Another action
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Something else here
-              li.dropdown
-                a(href="#", role="button", class="dropdown-toggle", data-toggle="dropdown")
-                  | We Make
-                  b.caret
-                  ul.dropdown-menu(role='menu', aria-labelledby='drop1')
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Action
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Another action
-                    li(role='presentation')
-                      a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Something else here
+          .col-md-2
+            a.brand(href="/")
+              img.img-responsive(src="/assets/img/brand.png", alt="Fifth Letter Brand")
+          .col-md-9.col-md-offset-1
+            nav.nav-secondary
+              ul.nav.navbar-nav
+                li
+                  a(href="#") Contact
+                li
+                  a(href="#") Follow
+                li
+                  a(href="#") Subscribe
+                li.search
+                  form(class="site-search", method="POST", action="/")
+                    input(type="text", placeholder="Search")
+            nav.nav-primary
+              ul.nav.navbar-nav
+                li.dropdown
+                  a(href="#", role="button", class="dropdown-toggle", data-toggle="dropdown")
+                    | You Are
+                    b.caret
+                    ul.dropdown-menu(role='menu', aria-labelledby='drop1')
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Action
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Another action
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Something else here
+                li.dropdown
+                  a(href="#", role="button", class="dropdown-toggle", data-toggle="dropdown")
+                    | You Need
+                    b.caret
+                    ul.dropdown-menu(role='menu', aria-labelledby='drop1')
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Action
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Another action
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Something else here
+                li.dropdown
+                  a(href="#", role="button", class="dropdown-toggle", data-toggle="dropdown")
+                    | We Are
+                    b.caret
+                    ul.dropdown-menu(role='menu', aria-labelledby='drop1')
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Action
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Another action
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Something else here
+                li.dropdown
+                  a(href="#", role="button", class="dropdown-toggle", data-toggle="dropdown")
+                    | We Make
+                    b.caret
+                    ul.dropdown-menu(role='menu', aria-labelledby='drop1')
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Action
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Another action
+                      li(role='presentation')
+                        a(role='menuitem', tabindex='-1', href='http://twitter.com/fat') Something else here
 
     .container
 
