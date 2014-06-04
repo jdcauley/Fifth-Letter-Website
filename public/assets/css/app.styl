@@ -95,18 +95,38 @@ a
 .nav-primary
   .navbar-nav
     > li
-      margin-right 10px
+      margin-right 20px
       > a
         font 500 24px $font-family-serif
-        letter-spacing 0.1em
+        letter-spacing 0.075em
         text-transform uppercase
         color $brand-red
         .caret
           margin-top: -5px;
           margin-left: 10px;
-          border-top: 6px solid;
-          border-right: 6px solid transparent;
-          border-left: 6px solid transparent;
+          border-top: 7px solid;
+          border-right: 7px solid transparent;
+          border-left: 7px solid transparent;
+      > .dropdown-menu
+        padding 10px 0
+        background $brand-red
+        border none
+        border-radius 0
+        > li
+          > a
+            padding 5px 20px
+            font-weight 200
+            font-size 18px
+            color #fff
+            &:hover,
+            &:focus
+              color $brand-red
+              background-color #fff
+  .nav
+    .open
+      > a
+        background none
+        border none
 
 
 
