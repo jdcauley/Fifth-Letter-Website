@@ -49,7 +49,8 @@ a
   .nav
     > li
       > a
-        &:hover
+        &:hover,
+        &:active
           background none
   .navbar-nav
     float none
@@ -84,12 +85,28 @@ a
       content ''
       padding 0
     input
-      margin-top: 3px;
-      padding: 2px 10px;
-      width: 298px;
-      font-weight: 200;      
-      font-size: 18px;
+      margin-top 3px
+      padding 2px 10px
+      width 298px
+      font-weight 200
+      font-size 18px
       border 1px solid $brand-gray
+
+.nav-primary
+  .navbar-nav
+    > li
+      margin-right 10px
+      > a
+        font 500 24px $font-family-serif
+        letter-spacing 0.1em
+        text-transform uppercase
+        color $brand-red
+        .caret
+          margin-top: -5px;
+          margin-left: 10px;
+          border-top: 6px solid;
+          border-right: 6px solid transparent;
+          border-left: 6px solid transparent;
 
 
 
